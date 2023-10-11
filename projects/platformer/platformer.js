@@ -43,22 +43,37 @@ $(function () {
     // Create platforms
     // You must decide the x position, y position, width, and height of the platforms
     // example usage: createPlatform(x,y,width,height)
-    createPlatform(1,600,100,500)
+    createPlatform(1,600,100,10)
     createPlatform(200,550,150,10)
     createPlatform(400,450,110,10)
     createPlatform(600,590,100,10)
-    createPlatform(900,590,100,10)
-    createPlatform(100,300,1000,20)
-    createPlatform(100,0,10,300)
+    createPlatform(900,600,400,10)
+    createPlatform(1300,500,100,10) 
+    createPlatform(1100,400,100,10) 
+    createPlatform(1300,300,100,10) 
+    createPlatform(900,200,300,10) 
+    createPlatform(500,200,300,10) 
+    
+
+    // walls 
+    createPlatform(900,300,200,20)
+    createPlatform(1100,200,10,300)
+    createPlatform(1379,0,10,500)
+    createPlatform(100,0,10,300) 
+    createPlatform(390,0,10,100) 
+    createPlatform(300,0,10,100) 
+    createPlatform(100,200,200,50)
+    createPlatform(900,200,50,100)
+    createPlatform(300,220,100,5)
     // TODO 2
     // Create collectables
     // You must decide on the collectable type, the x position, the y position, the gravity, and the bounce strength
     // Your collectable choices are 'database' 'diamond' 'grace' 'kennedi' 'max' and 'steve'; more can be added if you wish
     // example usage: createCollectable(type, x, y, gravity, bounce)
 
-    createCollectable("database",800,510,0,0)
-
-
+    createCollectable("database",790,410,0,0)
+    createCollectable("database",430,410,0,0)
+    createCollectable("database",330,50,0,0)
 
 
     // TODO 3
@@ -66,7 +81,9 @@ $(function () {
     // You must decide the wall you want the cannon on, the position on the wall, and the time between shots in milliseconds
     // Your wall choices are: 'top' 'left' 'right' and 'bottom'
     // example usage: createCannon(side, position, delay, width, height)
-    createCannon("right",690,1,100,20,1)
+    createCannon("left",666,1,100,20,1)
+    createCannon("bottom",780,900,20,20)
+    createCannon("right",800,1,100,20,1)
 
 
 
